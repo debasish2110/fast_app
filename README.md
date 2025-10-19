@@ -1,6 +1,6 @@
 # Tracker App — FastAPI + React
 
-A simple **Tracker Application** built with **FastAPI** (backend) and **React** (frontend).  
+A simple **Tracker Application** built with **FastAPI** (backend) **Postgress**(Database) and **React** (frontend).  
 This project is part of my learning journey with FastAPI and modern web development.
 
 ---
@@ -21,6 +21,8 @@ tracker-app/
 ├── backend/                     # FastAPI backend
 |   ├── models
 |   |   ├── product_models.py
+|   |   ├── database.py
+|   |   ├── database_models.py
 |   |   └── __init__.py
 │   ├── app.py                   # Entry point for FastAPI app
 │   ├── requirements.txt         # Backend dependencies
