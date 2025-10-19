@@ -15,6 +15,7 @@ products = [
 ]
 product = Products(id=5, name="Chair", description="A comfortable chair", price=89.99, quantity=15)
 
+# for dependency injection, in the function where db is required
 def get_db():
     db = SessionLocal()
     try:
