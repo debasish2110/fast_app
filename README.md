@@ -1,4 +1,4 @@
-# 🧭 Tracker App — FastAPI + React
+# Tracker App — FastAPI + React
 
 A simple **Tracker Application** built with **FastAPI** (backend) and **React** (frontend).  
 This project is part of my learning journey with FastAPI and modern web development.
@@ -82,7 +82,6 @@ tracker-app/
    ```bash
    npm install
    ```
-   _(You had `node install` earlier — the correct command is `npm install`.)_
 
 3. Start the React development server:
    ```bash
