@@ -57,8 +57,6 @@ def create_product(product: Products, db: Session = Depends(get_db)):
     return {"message": "Product created successfully", "product": product}
 
 @app.put("/products/{product_id}")
-
-@app.put("/products/{product_id}")
 def update_product(product_id: int, product: Products, db: Session = Depends(get_db)):
     db_product = db.query(database_models.Product).filter(database_models.Product.id == product_id).first()
     if not db_product:
