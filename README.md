@@ -18,16 +18,21 @@ This project is part of my learning journey with FastAPI and modern web developm
 ```
 tracker-app/
 │
-├── backend/              # FastAPI backend
-│   ├── main.py           # Entry point for FastAPI app
-│   ├── requirements.txt  # Backend dependencies
-│   └── ...               
+├── backend/                     # FastAPI backend
+|   ├── models
+|   |   ├── product_models.py
+|   |   └── __init__.py
+│   ├── app.py                   # Entry point for FastAPI app
+│   ├── requirements.txt         # Backend dependencies
+│   └── DockerFile               
 │
-├── frontend/             # React frontend
+├── frontend/                    # React frontend
+│   ├── public/
 │   ├── src/
 │   ├── package.json
-│   └── ...
+│   └── DockerFile
 │
+├── docker-compose.yaml
 └── README.md
 ```
 
@@ -147,4 +152,4 @@ Feel free to fork and modify it for your personal experiments.
 
 **Debashish Dash**  
 Learning FastAPI & React ⚡  
-[GitHub](https://github.com/yourusername) | [LinkedIn](https://linkedin.com/in/yourprofile)
+[LinkedIn](https://linkedin.com/in/debashish98)
