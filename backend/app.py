@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Depends, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from models import database_models
 from models.database import SessionLocal, engine
@@ -6,6 +7,14 @@ from models.product_models import Products
 
 app = FastAPI()
 database_models.Base.metadata.create_all(bind=engine)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 products = [
     Products(id=1, name="Phone", description="A smartphone", price=699.99, quantity=50),
